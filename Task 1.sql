@@ -1,5 +1,8 @@
+'''creating a schema named internship and using that schema'''
 create schema internship;
 use internship;
+
+'''creating a table Books consisting of the required columns'''
 Create table Books(
 	Book_ID int Primary key ,
     Title varchar(50),
@@ -7,16 +10,18 @@ Create table Books(
     Publication_Year date,
     Genre varchar(30)
     );
-describe Books;
+describe Books; --describing the books table
 
+--creating a table Members with the required columns
 Create table Members(
 	Member_ID int Primary key,
     Name varchar(40),
     Address varchar(100),
     Phone_number varchar(20)
     );
-describe Memeber;
+describe Memeber; --describing the Member table
 
+--create table Transactions with the required columns
 Create table Transactions(
 	Transaction_ID int primary key,
     Book_ID int,
@@ -26,9 +31,10 @@ Create table Transactions(
     Foreign Key (Book_ID) references Books(Book_ID),
     Foreign Key (Member_id) references Members(Member_ID)
 );
-describe Transactions;
+describe Transactions; --describing the Transactions Table
 
-#INSERTING VALUES IN THE TABLES
+--INSERTING VALUES IN THE TABLES
+
 INSERT INTO Books (Book_ID, Title, Author, Publication_Year, Genre)
 VALUES
   (1, 'The Lord of the Rings', 'J.R.R. Tolkien', '1954-12-29', 'Fantasy'),
@@ -43,6 +49,8 @@ VALUES
   (10, 'The Da Vinci Code', 'Dan Brown', '2003-03-28', 'Historical Fiction');
 SELECT * from Books;
 
+--INSERTING VALUES IN THE Members table
+	
 INSERT INTO Members (Member_ID, Name, Address, Phone_Number)
 VALUES
     (4, 'David Miller', '543 Oak St', '987-654-3210'),
@@ -71,27 +79,27 @@ VALUES
     (13, 1, 13, '2023-12-09', '2023-12-19');
 SELECT * FROM Transactions;
 
-#update of the data , delete of the data and retreive of the data
-#updating the values of the books table having id 7
-UPDATE Books
+-- update of the data , delete of the data and retreive of the data
+-- updating the values of the books table having id 7
+--UPDATE Books values 
 SET Genre = 'Science Fiction'
 WHERE Book_ID = 7;
 select * from Books;
 
-#deleting of a data from the table Members
+-- deleting of a data from the table Members
 DELETE FROM Members
 WHERE Member_ID = 3;
 
 select * from Members;
 
-#FILTERING DATA WITH THE WHERE CLAUSE
+-- FILTERING DATA WITH THE WHERE CLAUSE
 DELETE FROM Members
 WHERE Member_ID = 3;
 
-#SORTING OF DATA WITH THE ORDER BY CLAUSE
+-- SORTING OF DATA WITH THE ORDER BY CLAUSE
 SELECT * FROM Books ORDER BY Publication_Year DESC;
 
-#Grouping data with the GROUP BY clause and using aggregate functions
+-- Grouping data with the GROUP BY clause and using aggregate functions
 SELECT Author, COUNT(*) AS BookCount
 FROM Books
 GROUP BY Author;
