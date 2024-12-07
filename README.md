@@ -33,3 +33,8 @@ Insert data: Add new books, members, and transactions.
 Update data: Modify existing records.
 Delete data: Remove unwanted records.
 Retrieve data: Query the database to retrieve specific information.
+
+
+BOOK SCHEMA
+![Screenshot 2024-12-07 120022](https://github.com/user-attachments/assets/1d761b2d-fb69-45c3-a985-0d738dd83341)
+
