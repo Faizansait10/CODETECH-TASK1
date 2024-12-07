@@ -1,4 +1,11 @@
 # CODETECH-TASK1
+
+### Name : Faizan Sait
+### Company : CODETECH SOLUTIONS 
+### INTERN ID : CT08DS10234 
+### Domain : SQL
+### Duration : November to December 2024
+
 database for managing a library's book inventory, members, and borrow/return transactions.
 This repository contains the SQL scripts to create a database for a library management system. The database includes tables for books, members, and transactions.
 
