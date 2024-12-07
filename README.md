@@ -26,9 +26,9 @@ Borrow_Date,
 Return_Date
 
 ## SQL Scripts:
-The *database_schema.sql* file contains the SQL statements to create the database tables.
-The *data_insertion.sql* file contains SQL statements to insert sample data into the tables.
-The *queries.sql* file contains various SQL queries to:
+The *Task 1.sql* file contains the SQL statements to create the database tables.
+This sql file contains SQL statements to insert sample data into the tables.
+This file contains various SQL queries to:
 Insert data: Add new books, members, and transactions.
 Update data: Modify existing records.
 Delete data: Remove unwanted records.
