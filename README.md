@@ -6,23 +6,23 @@ Database Schema:
 The database schema consists of the following tables:
 
 ## Books:
-Book_ID (Primary Key)
-Title
-Author
-Publication_Year
+Book_ID (Primary Key),
+Title,
+Author,
+Publication_Year,
 Genre
 
 ## Members:
-Member_ID (Primary Key)
-Name
-Address
+Member_ID (Primary Key),
+Name,
+Address,
 Phone_Number
 
 ## Transactions:
-Transaction_ID (Primary Key)
-Book_ID (Foreign Key to Books)
-Member_ID (Foreign Key to Members)
-Borrow_Date
+Transaction_ID (Primary Key),
+Book_ID (Foreign Key to Books),
+Member_ID (Foreign Key to Members),
+Borrow_Date,
 Return_Date
 
 ## SQL Scripts:
