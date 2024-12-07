@@ -34,6 +34,19 @@ Update data: Modify existing records.
 Delete data: Remove unwanted records.
 Retrieve data: Query the database to retrieve specific information.
 
+### BOOK SCHEMA
+
+![image](https://github.com/user-attachments/assets/cce19f47-6507-4d38-a756-4471e384b16a)
+
+### Members Schema:
+
+![image](https://github.com/user-attachments/assets/f6400c9b-f639-4a87-8d20-226ec7d18c1a)
+
+### Transactions Schema
+
+![image](https://github.com/user-attachments/assets/f8254e96-8d35-4e37-8a97-d4eb56b0e435)
+
+
 
 
 
