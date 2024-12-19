@@ -104,11 +104,22 @@ SELECT Author, COUNT(*) AS BookCount
 FROM Books
 GROUP BY Author;
 
-#joining of two tables Transactions and Members
+-- joining of two tables Transactions and Members
 SELECT B.Title, M.Name
 FROM Books B
 JOIN Transactions T ON B.Book_ID = T.Book_ID
 JOIN Members M ON T.Member_ID = M.Member_ID;
 
-	
+-- TO FIND THE MOST POPULAR BOOK (BASED ON THE NUMBER OF TIME IT HAS BEEEN BORROWED)
+SELECT b.Title, COUNT(*) AS Borrow_Count
+FROM Books b
+INNER JOIN Transactions t ON b.Book_ID = t.Book_ID
+GROUP BY b.Title
+ORDER BY Borrow_Count DESC
+LIMIT 3;
+
+-- TO FIND THE AVERAGE BORROWING DURATION FOR ALL BOOKS 
+SELECT AVG(DATEDIFF(Return_Date, Borrow_Date)) AS Avg_Borrow_Duration
+FROM Transactions;
+
     
